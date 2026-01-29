@@ -1,0 +1,66 @@
+body {
+	margin: 1rem;
+}
+
+/* Text styles */
+
+h1 {
+	font-family: "Momo Trust Display", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p,
+a,
+small {
+	font-family: "Momo Trust Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+/* Header */
+
+.logo {
+	height: 2rem;
+}
+
+.site-nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.site-nav a {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.heart-icon {
+	height: 1.5rem;
+}
+
+/* Gallery grid (index.html) */
+
+.artwork {
+	width: 32%;
+}
+
+/* Artwork page (artwork.html) */
+
+.artwork-1 {
+	width: 50%;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 1.5rem;
+}
