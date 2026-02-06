@@ -92,6 +92,22 @@ header {
 	}
 }
 
+.art-container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.heart-outline {
+	width: 1.6rem;
+	grid-area: 1 / 1;
+	justify-self: end;
+	margin: 1vw;
+}
+
+.art-container a {
+	grid-area: 1 / 1;
+}
+
 .artwork {
 	width: 100%;
 }
@@ -106,4 +122,6 @@ header {
 
 footer {
 	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
 }
