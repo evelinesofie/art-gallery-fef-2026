@@ -29,6 +29,18 @@ a {
 
 /* Header */
 
+header {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	margin-bottom: 6vh;
+}
+
+.site-nav {
+	display: flex;
+	align-items: center;
+}
+
 .logo {
 	height: 2rem;
 }
@@ -36,11 +48,22 @@ a {
 .site-nav ul {
 	list-style: none;
 	padding-left: 0;
+	display: flex;
+	flex-grow: 1;
+}
+
+.site-nav li {
+	margin-left: 8vw;
 }
 
 .site-nav a {
 	font-size: 1.2rem;
 	font-weight: 600;
+}
+
+.site-nav li:last-child {
+	margin-left: auto;
+	margin-right: 3vw;
 }
 
 .heart-icon {
@@ -49,8 +72,28 @@ a {
 
 /* Gallery grid (index.html) */
 
+.art-grid {
+	display: grid;
+	/* Line below is for a responsive grid without media queries */
+	/* grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); */
+	grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 450px) {
+	.art-grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1vw;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.art-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 .artwork {
-	width: 32%;
+	width: 100%;
 }
 
 /* Artwork page (artwork.html) */
