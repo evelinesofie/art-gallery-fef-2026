@@ -118,6 +118,14 @@ header {
 	width: 50%;
 }
 
+/* Favorites page (favorites.html) */
+
+.fav-grid {
+	display: grid;
+	gap: 1vw;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
 /* Footer */
 
 footer {
